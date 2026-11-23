@@ -20,9 +20,9 @@ function trovaFasciaEta(eta){
     return 'Età non valida'
   } else if (eta <18){
     return 'Minorenne'
-  } else if (eta <35){
+  } else if (eta <36){
     return 'Giovane adulto'
-  } else if (eta <60){
+  } else if (eta <61){
     return 'Adulto'
   }else {
     return 'Senior'
@@ -32,4 +32,4 @@ function trovaFasciaEta(eta){
 
 // # Le prove: una riga di console.log per ogni caso di "Come verifichi"
 
-console.log(trovaFasciaEta(34))
+console.log(trovaFasciaEta(61))
