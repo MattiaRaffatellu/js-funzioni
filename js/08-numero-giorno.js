@@ -15,7 +15,15 @@
 */
 
 // # La funzione
-
-
+function trovaNumeroGiorno(giorni){
+const nomeGiorni = ['lunedi', 'martedi', 'mercoledi', 'Giovedi', 'venerdi', 'sabato', 'domenica']; 
+for (let i = 0; i < 7; i++){
+  if (giorni === nomeGiorni[i]){
+    return i + 1
+  }
+}
+return 0
+}
 // # Le prove: una riga di console.log per ogni caso di "Come verifichi"
 
+console.log(trovaNumeroGiorno('Giovedi'))

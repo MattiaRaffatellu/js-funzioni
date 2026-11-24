@@ -15,7 +15,16 @@
 */
 
 // # La funzione
+function contaGiorniDelMese(mese){
+const giorniMese = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const indice = mese - 1;  
+return giorniMese[indice] || 0
+}
 
 
 // # Le prove: una riga di console.log per ogni caso di "Come verifichi"
 
+console.log(contaGiorniDelMese(2))
+console.log(contaGiorniDelMese(3))
+console.log(contaGiorniDelMese(7))
+console.log(contaGiorniDelMese(13))
