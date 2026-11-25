@@ -33,4 +33,4 @@ return giorniMese[indice] || 0
 }
 
 // # Le prove: una riga di console.log per ogni caso di "Come verifichi"
-console.log(contaGiorniDelMese(2, 2028))
+console.log(contaGiorniDelMese(2, 2025))

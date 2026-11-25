@@ -11,7 +11,22 @@
 
 // # Fase di preparazione: qui vanno anche le funzioni
 
+function verificaOraNotturna(ore){
+  if (ore >= 0 && ore <= 5){
+    return true
+  }else {
+    return false
+  } 
+}
 
+function calcolaTotaleCorsa(prezzoBase, oraPartenza, oraArrivo){
+const totale = prezzoBase;
+if (verificaOraNotturna(oraPartenza) || verificaOraNotturna(oraArrivo) ){
+  return totale + 5 
+} else {
+  return totale 
+}
+}
 // # Fase di raccolta dati
 
 

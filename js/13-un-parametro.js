@@ -15,7 +15,13 @@
 */
 
 // # Le arrow function
+const calcolaMancia = (mancia) => mancia * 0.10;
+const formattaprezzo = (prezzo) => `${prezzo.toFixed(2)} €`;
+const verificaMaggioreEta = (eta) => eta >= 18
 
 
 // # Le prove: una riga di console.log per ogni caso di "Come verifichi"
+console.log(calcolaMancia(45))
+console.log(formattaprezzo(100))
+console.log(verificaMaggioreEta(5))
 
